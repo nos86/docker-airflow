@@ -75,7 +75,7 @@ case "$1" in
       airflow scheduler &
     fi
     if [ "$AIRFLOW__CORE__EXECUTOR" = "SequentialExecutor" ]; then
-      airflow scheduler &
+      airflow scheduler & 
     fi
     exec airflow webserver
     ;;
